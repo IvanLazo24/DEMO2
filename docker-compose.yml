@@ -121,6 +121,7 @@ services:
       - skynet_network
     ports:
       - "6006:6006"
+      
   swagger_machine:
     container_name: swagger_machine
     restart: always
