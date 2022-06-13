@@ -177,7 +177,7 @@ services:
     networks:
       - skynet_network
     ports:
-      - "7000:5011"
+      - "6012:6012"
 
 networks:
   skynet_network:
