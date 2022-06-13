@@ -146,19 +146,19 @@ services:
     networks:
       - skynet_network
     ports:
-      - "6009:5000"
+      - "6009:5009"
 
-  machine_learning-jupyter:
-    container_name: machine_learning_jupyter
-    restart: always
-    build:
-      context: ./AT16-SKYNET/MACHINE_LEARNING_SERVICE
-      dockerfile: Dockerfile-jupyter
-    networks:
-      - skynet_network
-    ports:
-      - "6010:5000"
-  
+#  machine_learning-jupyter:
+#    container_name: machine_learning_jupyter
+#    restart: always
+#    build:
+#      context: ./AT16-SKYNET/MACHINE_LEARNING_SERVICE
+#      dockerfile: Dockerfile-jupyter
+#    networks:
+#      - skynet_network
+#    ports:
+#      - "6010:5000"
+#
   skynet_ui_web:
     container_name: SKYNET_UI_WEB
     restart: always
@@ -176,7 +176,7 @@ services:
     networks:
       - skynet_network
     ports:
-      - "7000:5011"
+      - "6012:6012"
 
 networks:
   skynet_network:
